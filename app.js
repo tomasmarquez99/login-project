@@ -10,7 +10,7 @@ const { ok } = require('assert');
 
 const JWT_SECRET = 'JKJHAygBFYG!@bm,@$%#@j^ERTrstl;hBERT#rt^#$%ERergdhyuoyheFWT36YERYt'
 
-mongoose.connect('mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.5.4', {
+mongoose.connect(MONGO_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
